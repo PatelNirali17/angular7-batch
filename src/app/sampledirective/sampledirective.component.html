@@ -1,0 +1,123 @@
+<div class="row">
+  <div class="col-md-12">
+    <h3> ngIf directives </h3>
+    <h6 *ngIf="displayName;else elseBlock">
+      Nirali
+    </h6>
+    <ng-template #elseBlock>
+      <h6>Swati</h6>
+    </ng-template>
+  </div>
+</div>
+
+<div class="row mt-1">
+  <div class="col-md-12">
+    <div *ngIf="displayName; then thenBlock; else elseBlock1"></div>
+    <ng-template #thenBlock>
+      <h6>day</h6>
+    </ng-template>
+    <ng-template #elseBlock1>
+      <h6>night</h6>
+    </ng-template>
+  </div>
+</div>
+
+<div class="row mt-1">
+  <div class="col-md-12">
+    <button class="btn btn-outline-success" (click)="show = !show">
+      {{show ? 'hide' : 'show'}}
+    </button>
+    <div *ngIf="show">Nirali</div>
+  </div>
+</div>
+
+<div class="row mt-3">
+  <div class="col-md-12">
+    <button class="btn btn-outline-info" (click)="showName = !showName">
+      {{showName ? 'hide' : 'show'}}
+    </button>
+    <br>
+    <div *ngIf="showName;then thenBlock; else elseBlock2"></div>
+    <ng-template #thenBlock>Nirali</ng-template>
+    <ng-template #elseBlock2>Swati</ng-template>
+  </div>
+</div>
+ 
+<div class="row mt-4">
+  <div class="col-md-12">
+    <h3>ngSwitch directive</h3>
+    <div [ngSwitch]="weekday">
+      <h6 *ngSwitchCase=1>Today is Sunday</h6>
+      <h6 *ngSwitchCase=2>Today is Monday</h6>
+      <h6 *ngSwitchCase=3>Today is Tuesday</h6>
+      <h6 *ngSwitchCase=4>Today is Wednesday</h6>
+      <h6 *ngSwitchCase=5>Today is Thursday</h6>
+      <h6 *ngSwitchCase=6>Today is Friday</h6>
+      <h6 *ngSwitchCase=7>Today is Saturday</h6>
+      <h6 *ngSwitchDefault>Invalid day</h6>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-1">
+  <div class="col-md-12">
+    <div [ngSwitch]="template">
+      <h6 *ngSwitchCase=1>first template</h6>
+      <h6 *ngSwitchCase=2>second template</h6>
+      <h6 *ngSwitchCase=3>third template</h6>
+      <h6 *ngSwitchCase=4>fourt template</h6>
+      <h6 *ngSwitchCase=5>fifth template</h6>
+      <h6 *ngSwitchDefault>no template</h6>
+    </div>
+  </div>
+</div>
+
+
+<div class="row mt-5">
+  <div class="col-md-12">
+    <h3>ngFor directive</h3>
+    <table class="table mt-2 table-bordered table-hover table-striped">
+      <thead>
+        <tr class="table-secondary">
+          <th scope="col">Sr.No</th>
+          <th scope="col">Name</th>
+          <th scope="col">Course</th>
+          <th scope="col">Address</th>
+          <th scope="col">Mobile No</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let table of tables;index as i">
+        <tr>
+          <th scope="row">{{i+1}}</th>
+          <td>{{table.name}}</td>
+          <td>{{table.course}}</td>
+          <td>{{table.address}}</td>
+          <td>{{table.mobileNo}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- <div class="row mt-5">
+    <div class="col-md-12">
+      <table class="table mt-2 table-bordered table-hover table-striped">
+        <thead>
+          <tr class="table-success">
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Species</th>
+            <th scope="col">Ocupation</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let detail of adventures">
+          <tr>
+            <td>{{detail.name}}</td>
+            <td>{{detail.age}}</td>
+            <td>{{detail.species}}</td>
+            <td>{{detail.ocupation}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div> -->

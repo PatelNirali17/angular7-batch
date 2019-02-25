@@ -1,0 +1,9 @@
+div{
+    margin: 5px;
+}
+.form{
+    margin: 10px auto;
+    width: 300px;
+    border: 1px solid gray;
+}
+a{text-decoration:none;}

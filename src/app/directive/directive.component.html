@@ -1,0 +1,46 @@
+<h1>Attribute directive</h1>
+<div class="row">
+  <div class="col-md-12">
+    <p [ngStyle]="{'border':'2px solid red','font-size':'24px'}">angular</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <p [ngClass]="{'alert':true,'alert-secondary':true}">codekul</p>
+  </div>
+</div>
+<input type="text" (mouseenter)="hoverVar = true" (mouseleave)="hoverVar = false" [ngClass]="{'hoverMe':hoverVar}">
+<h5>custom directive</h5>
+<div class="row mt-2">
+  <div class="col-md-12">
+    <input type="text" [appCustomDirective]="'100px'">
+  </div>
+</div>
+
+<h1>Strutural dierctive</h1>
+<h4>ngIf directive</h4>
+
+<h2 *ngIf="displayName;else elseBlock">
+  angular 7 batch
+</h2>
+<ng-template #elseBlock>
+  <h2>codekul</h2>
+</ng-template>
+
+<h4>ngSwitch directive</h4>
+
+<div [ngSwitch]="color">
+  <div *ngSwitchCase = "'red'">i have red color</div>
+  <div *ngSwitchCase = "'blue'">i have blue color</div>
+  <div *ngSwitchCase = "'green'">i have green color</div>
+  <div *ngSwitchCase = "'orange'">i have orange color</div>
+  <div *ngSwitchDefault>i have default color</div>
+</div>
+
+<h4>ngFor directive</h4>
+<div *ngFor="let student of students;index as i">
+  <h6>{{i+1}} {{student}}</h6>
+</div>
+
+
+

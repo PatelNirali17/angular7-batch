@@ -1,0 +1,7 @@
+.brd{
+    border: 2px solid red;
+}
+.hoverMe{
+    width: 500px;
+    border: 2px solid green;
+}

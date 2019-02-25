@@ -1,0 +1,46 @@
+<div class="container">
+  <!-- <div class="row">
+    <div class="col-md-12">
+        <div>
+            <h2 class="title">Interpolation binding</h2>
+            <div class="alert alert-info">Welocome to {{name}}</div>
+            <div class="alert alert-info">Amount to {{amount* 5}}</div>
+          
+            <h2 class="title">Property binding</h2>
+            <div>
+              <input type="text" [style.background-color]="selectedColor">
+            </div>
+            <div class="mt-2">
+              <input type="text" [disabled]="myDisable" name="email">
+            </div>
+          
+            <h2 class="title">Event binding</h2>
+            <input type="text">
+            <button (click)="clickMe($event)">Go</button>
+          
+            <h2 class="title">template reference variable</h2>
+            <input type="text" #myInput>
+            <button (click)="tempref(myInput.value)">click me</button>
+          
+            <h2 class="title">two way binding [()]</h2>
+            <input type="text" [(ngModel)]="anyThing">{{anyThing}}
+          </div>
+    </div>
+  </div> -->
+  <div class="col-md-12">
+    <div class="row mt-5">
+      <app-eventemitter [crd]="pqr" (crdEv) = "onClick($event)"></app-eventemitter>
+      <app-eventemitter [crd] = "{imgUrl:'https://www.traccar.org/images/server/feature-devices.svg',
+      title:'Devices',
+      msg:'Traccar supports more protocols and device models than any other GPS tracking system on the market. You can select GPS trackers from a variety of vendors from low cost Chinese models to high-end quality brands.'}" (crdEv) = "onClick($event)">
+    </app-eventemitter>
+    </div>
+
+  </div>
+  <div class="row">
+      <div class="col-md-12">
+          <div class="alert alert-warning">welcome to {{clkEvent}}</div>
+      </div>
+    </div> 
+
+</div>

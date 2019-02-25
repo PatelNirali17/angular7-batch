@@ -1,0 +1,22 @@
+<h1>view child</h1>
+<div class="row">
+  <div class="col-md-12">
+    <input type="text" #myValue>
+    <input type="button" value="ok" (click)="onclick(myValue.value)">
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <h1>{{myVal}}</h1>
+  </div>
+</div>
+<h1 class="mt-3">content child</h1>
+<div class="row">
+  <div class="col-md-12">
+    <app-contentchild>
+      <div class="alert alert-warning" role="alert" #alert>
+        A simple warning alert—check it out!
+      </div>
+    </app-contentchild>
+  </div>
+</div>
