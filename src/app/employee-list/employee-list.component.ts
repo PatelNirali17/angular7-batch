@@ -25,4 +25,10 @@ export class EmployeeListComponent implements OnInit {
       }
     })
 }
+child1(){
+  this.router.navigate(['one'])
+}
+child2(){
+  this.router.navigate(['two'])
+}
 }

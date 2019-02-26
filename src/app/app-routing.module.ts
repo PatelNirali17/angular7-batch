@@ -5,6 +5,7 @@ import { EmployeeDetailsComponent } from './employee-details/employee-details.co
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { Child1Component } from './employee-list/child1/child1.component';
 import { Child2Component } from './employee-list/child2/child2.component';
+import { GuardServiceService } from './guard-service.service';
 
 const routes: Routes = [
   {path:'',component:EmployeeListComponent,
@@ -14,7 +15,7 @@ const routes: Routes = [
    ]
    
 },
-  {path:'employeedetails/:usNm',component:EmployeeDetailsComponent},
+  {path:'employeedetails/:usNm',component:EmployeeDetailsComponent, canActivate : [GuardServiceService]},
   {path:'forgot',component:ForgotPasswordComponent}
 ];
 

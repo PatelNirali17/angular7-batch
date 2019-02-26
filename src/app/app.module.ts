@@ -24,6 +24,7 @@ import { EmployeeDetailsComponent } from './employee-details/employee-details.co
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { Child1Component } from './employee-list/child1/child1.component';
 import { Child2Component } from './employee-list/child2/child2.component';
+import { GuardServiceService } from './guard-service.service';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,7 @@ import { Child2Component } from './employee-list/child2/child2.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [GuardServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
