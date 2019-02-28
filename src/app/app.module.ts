@@ -25,6 +25,8 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { Child1Component } from './employee-list/child1/child1.component';
 import { Child2Component } from './employee-list/child2/child2.component';
 import { GuardServiceService } from './guard-service.service';
+import { ServicesComponent } from './services/services.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -49,12 +51,14 @@ import { GuardServiceService } from './guard-service.service';
     EmployeeDetailsComponent,
     ForgotPasswordComponent,
     Child1Component,
-    Child2Component
+    Child2Component,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [GuardServiceService],
   bootstrap: [AppComponent]

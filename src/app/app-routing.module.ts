@@ -6,17 +6,19 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { Child1Component } from './employee-list/child1/child1.component';
 import { Child2Component } from './employee-list/child2/child2.component';
 import { GuardServiceService } from './guard-service.service';
+import { ServicesComponent } from './services/services.component';
 
 const routes: Routes = [
-  {path:'',component:EmployeeListComponent,
-   children : [
-     {path:'one',component:Child1Component},
-     {path:'two',component:Child2Component}
-   ]
+//   {path:'',component:EmployeeListComponent,
+//    children : [
+//      {path:'one',component:Child1Component},
+//      {path:'two',component:Child2Component}
+//    ]
    
-},
+// },
   {path:'employeedetails/:usNm',component:EmployeeDetailsComponent, canActivate : [GuardServiceService]},
-  {path:'forgot',component:ForgotPasswordComponent}
+  {path:'forgot',component:ForgotPasswordComponent},
+  {path:'',component:ServicesComponent}
 ];
 
 @NgModule({
