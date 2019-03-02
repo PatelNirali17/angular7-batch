@@ -13,6 +13,10 @@ export class FruitsService {
       'apple',
       'banana',
       'mango',
+      'pineapple',
+      'grapes',
+      'orange',
+      'guava',
       'pineapple'
       ]
   }

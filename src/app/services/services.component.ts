@@ -10,7 +10,7 @@ export class ServicesComponent implements OnInit {
   fruitList =[];
   // names = [
   //   'apple',
-  //   'banana',
+  //   'banana',           //without use services
   //   'mango',
   //   'pineapple'
   //   ]
