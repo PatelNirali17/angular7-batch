@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class FruitsService {
   names = [];
-  constructor(private httpClient: HttpClient) { }
+  constructor(private http: HttpClient) { }
   
   getFruits(){
     return this.names = [
@@ -19,5 +19,8 @@ export class FruitsService {
       'guava',
       'pineapple'
       ]
+  }
+  getMethod(){
+    return this.http.get('http://api.icndb.com/jokes/random')
   }
 }

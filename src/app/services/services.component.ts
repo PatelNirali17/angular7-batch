@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'; 
+import { Component, OnInit } from '@angular/core';
 import { FruitsService } from '../fruits.service';
 
 @Component({
@@ -7,7 +7,8 @@ import { FruitsService } from '../fruits.service';
   styleUrls: ['./services.component.css']
 })
 export class ServicesComponent implements OnInit {
-  fruitList =[];
+  fruitList = [];
+  joke :string;
   // names = [
   //   'apple',
   //   'banana',           //without use services
@@ -15,10 +16,18 @@ export class ServicesComponent implements OnInit {
   //   'pineapple'
   //   ]
 
-  constructor(private fruitsService:FruitsService) { }
+  constructor(private fruitsService: FruitsService) { }
 
   ngOnInit() {
     this.fruitList = this.fruitsService.getFruits();
+    this.callGetMethod();
   }
 
+  callGetMethod() {
+    this.fruitsService.getMethod().subscribe(result => {
+      console.log(result);
+      console.log(result['value'].joke);
+      this.joke = result['value'].joke    
+    })
+  }
 }

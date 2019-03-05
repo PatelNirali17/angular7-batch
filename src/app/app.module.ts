@@ -27,6 +27,7 @@ import { Child2Component } from './employee-list/child2/child2.component';
 import { GuardServiceService } from './guard-service.service';
 import { ServicesComponent } from './services/services.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { HttpClientModule } from '@angular/common/http';
     ForgotPasswordComponent,
     Child1Component,
     Child2Component,
-    ServicesComponent
+    ServicesComponent,
+    LifeCycleComponent
   ],
   imports: [
     BrowserModule,
