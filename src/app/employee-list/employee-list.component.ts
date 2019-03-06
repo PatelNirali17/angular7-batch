@@ -12,9 +12,12 @@ export class EmployeeListComponent implements OnInit {
 
   ngOnInit() {
   }
+  forgot(){
+    this.router.navigate(['forgot'])
+  }
   login(usNm, pass) {
-    console.log(usNm);
-    console.log(pass);
+    // console.log(usNm);
+    // console.log(pass);
     // if (usNm === 'codekul' && pass === 'angular') {
       
     // }

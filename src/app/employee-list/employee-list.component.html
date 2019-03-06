@@ -7,10 +7,11 @@
     </div>
   </div>
   <div class="row">
-    <a [routerLink]="['forgot']" >Forgot password</a>
+    <a (click)="forgot()" >Forgot password</a>
+  </div>
+  <div>
+      <a (click)="child1()">child1</a>
+      <a (click)="child2()">child2</a>
   </div>
 </div>
-
-<a (click)="child1()"  >child1</a>
-<a (click)="child2()" >child2</a>
 <router-outlet></router-outlet>

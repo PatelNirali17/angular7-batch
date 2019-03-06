@@ -28,6 +28,11 @@ export class ServicesComponent implements OnInit {
       console.log(result);
       console.log(result['value'].joke);
       this.joke = result['value'].joke    
-    })
+    });
+    this.fruitsService.getMethod1().subscribe(result1 => {
+      console.log(result1);
+      console.log(result1['data'].id);
+      this.joke = result1['data'].id    
+    });
   }
 }

@@ -10,6 +10,13 @@ export class GuardServiceService implements CanActivate {
 
   canActivate(route:ActivatedRouteSnapshot,state:RouterStateSnapshot):boolean {
     // return false;
-     return route.params['usNm'] === 'codekul';
+    if(route.params['usNm']){
+      // alert('Successful login');
+       return true; 
+     }else{
+       return false;
+      //  alert('You must enter a values');
+     }
+    //  return route.params['usNm'] === 'codekul';
   }
 }

@@ -1,6 +1,6 @@
 <!-- <app-first></app-first>
 <app-small-firsl></app-small-firsl> -->
-<div class="container">
+<div>
     <!-- <div class="row">
         <div class="col-md-12">
             <div class="alert alert-success" role="alert">
@@ -48,6 +48,32 @@
             <a [routerLink]="['employeedetails']" routerLinkActive ="active"> employeedetails component</a>
           </nav> -->
           
+          <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="#">Nbp</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['employeelist']" routerLinkActive ="active">Employeelist</a>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['employeedetails',unNm]" routerLinkActive ="active">employeedetails</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" [routerLink]="['forgo']" routerLinkActive ="active">Forgot</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['services']" routerLinkActive ="active">services</a>
+                      </li>
+                  <li class="nav-item">
+                    <a class="nav-link" [routerLink]="['reactiveform']" routerLinkActive ="active">Reactive form</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
         <router-outlet></router-outlet>
     </div>
 </div>
