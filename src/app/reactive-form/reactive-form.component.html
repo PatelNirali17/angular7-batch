@@ -1,20 +1,20 @@
 <div class="container mt-5 w-50 bg-secondary rounded">
   <div class="col-md-12">
-    <h4 class="text-center text-white">Sign up From</h4>
+    <h4 class="text-center text-white text-monospace">Sign up From</h4>
     <form [formGroup]="signUpForm" class="p-2">
       <div class="form-group">
-        <input type="text" class="form-control" placeholder="First Name" formControlName= "firstName">
+        <input type="text" class="form-control text-monospace" placeholder="First Name" formControlName= "firstName">
       </div>
       <div class="form-group">
-        <input type="text" class="form-control" placeholder="Last Name" formControlName= "lastName">
+        <input type="text" class="form-control text-monospace" placeholder="Last Name" formControlName= "lastName">
       </div>
       <div class="form-group">
-        <input type="email" class="form-control" placeholder="Enter email" formControlName= "email">
+        <input type="email" class="form-control text-monospace" placeholder="Enter email" formControlName= "email">
       </div>
       <div class="form-group">
-        <input type="password" class="form-control" placeholder="Password" formControlName= "pass">
+        <input type="password" class="form-control text-monospace" placeholder="Password" formControlName= "pass">
       </div>
-      <button type="submit" class="btn" (click)="sumbitData()">Submit</button>
+      <button type="submit" class="btn text-monospace" (click)="sumbitData()">Submit</button>
     </form>
   </div>
 </div>
