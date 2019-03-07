@@ -29,6 +29,7 @@ import { ServicesComponent } from './services/services.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { TemplateDrivenFromComponent } from './template-driven-from/template-driven-from.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
     Child2Component,
     ServicesComponent,
     LifeCycleComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    TemplateDrivenFromComponent
   ],
   imports: [
     BrowserModule,

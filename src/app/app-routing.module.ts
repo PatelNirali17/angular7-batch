@@ -8,6 +8,7 @@ import { Child2Component } from './employee-list/child2/child2.component';
 import { GuardServiceService } from './guard-service.service';
 import { ServicesComponent } from './services/services.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { TemplateDrivenFromComponent } from './template-driven-from/template-driven-from.component';
 
 const routes: Routes = [
   {path:'employeelist',component:EmployeeListComponent,
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path:'employeedetails/:usNm',component:EmployeeDetailsComponent, canActivate : [GuardServiceService]},
   {path:'forgot',component:ForgotPasswordComponent},
   {path:'services',component:ServicesComponent},
-  {path:'reactiveform',component:ReactiveFormComponent}
+  {path:'reactiveform',component:ReactiveFormComponent},
+  {path:'templatedrivenform',component:TemplateDrivenFromComponent}
 ];
 
 @NgModule({
