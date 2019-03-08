@@ -20,5 +20,10 @@
     color: #1d1d1b;
     background-color: white;
     border-radius: 5px;
-    box-shadow: inset 0px 0px 10px #030303, inset 0px -20px 1px rgba(150, 150, 150, .2);
+    box-shadow: inset 0px 0px 10px #030303, 
+                inset 0px -20px 1px rgba(150, 150, 150, .2),
+                0px 0px 2px #030303, 
+                inset 0px -20px 1px #DCDCDC,
+                -3px 3px 7px rgba(0, 0, 0, .6), 
+                inset -100px 0px 100px rgba(255, 255, 255, .5);
 }

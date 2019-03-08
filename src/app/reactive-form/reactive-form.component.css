@@ -1,19 +1,20 @@
 .container{
     box-shadow: -3px 3px 7px rgba(0, 0, 0, .6), inset -100px 0px 100px rgba(255, 255, 255, .5);
+    border-left: 10px solid #3386e4;
 }
 h4{
-    font-family: 'Sofia';
+    font-family: 'Charm';
 }
 input{
     box-shadow: inset 0px 0px 10px #030303, inset 0px -20px 1px rgba(150, 150, 150, .2);
-    border: 5px inset #7fa09e;
-    font-family: 'Sofia';
+    border: 2px solid #7fa09e;
+    font-family: 'Charm';
 }
 button{
     background-color: #EBEBEB;
     box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #DCDCDC;
-    font-family: 'Sofia';
+    font-family: 'Charm';
 }
-.focusMe, .focusMe1, .focusMe2, .focusMe3{
-    border: 5px inset red;
+.errorClass{
+    border: 2px solid red;
 }

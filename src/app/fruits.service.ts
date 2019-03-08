@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -29,5 +29,10 @@ export class FruitsService {
       params: new HttpParams().set('id',this.id)
     });
   
+  }
+  postForm(form) {
+    return this.http.post('https://reqres.in/api/users', form, {
+      headers: new HttpHeaders().set('Content-Type', 'application/json')
+    })
   }
 }
