@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
+import * as RX from 'rxjs' //observable
 
 @Injectable({
   providedIn: 'root'
@@ -8,6 +9,10 @@ export class FruitsService {
   names = [];
   constructor(private http: HttpClient) { }
   id: string;
+
+  foo = new RX.ReplaySubject() //observables
+
+
   getFruits(){
     return this.names = [
       'apple',

@@ -30,6 +30,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { LifeCycleComponent } from './life-cycle/life-cycle.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { TemplateDrivenFromComponent } from './template-driven-from/template-driven-from.component';
+import { AsynObservableComponent } from './asyn-observable/asyn-observable.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { TemplateDrivenFromComponent } from './template-driven-from/template-dri
     ServicesComponent,
     LifeCycleComponent,
     ReactiveFormComponent,
-    TemplateDrivenFromComponent
+    TemplateDrivenFromComponent,
+    AsynObservableComponent
   ],
   imports: [
     BrowserModule,
